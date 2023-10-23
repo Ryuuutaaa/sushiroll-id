@@ -135,6 +135,7 @@ video {
   padding: 10px;
   border-radius: 30px;
   font-weight: bold;
+  transition: all linear 0.3s;
 }
 
 .profile:hover {
@@ -180,7 +181,7 @@ video {
 /* footer */
 .footer {
   width: 100%;
-  height: 100vh;
+  height: 105vh;
   background-color: black;
   color: white;
   padding-top: 80px;
@@ -231,5 +232,9 @@ video {
 }
 
 .container .incontainer .social ul li a:hover {
+  color: #fe6100;
+}
+
+.container .incontainer .social ul li:hover {
   color: #fe6100;
 }
