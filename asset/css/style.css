@@ -187,10 +187,38 @@ video {
   padding-top: 80px;
 }
 
-.footer .container h4 {
+.footer .container .footer-url {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-url .bag1 h4,
+.footer-url .bag2,
+.footer-url p {
   font-weight: bold;
   padding-top: 60px;
   text-align: center;
+}
+
+.bag1 {
+  margin-right: 30%;
+}
+
+.footer-url p {
+  margin-right: 10px;
+}
+
+.bag2 a {
+  padding: 5px;
+}
+
+.bag2 a {
+  color: white;
+  text-decoration: none;
+}
+
+.bag2 a:hover {
+  color: #fe6100;
 }
 
 .container .incontainer img {
