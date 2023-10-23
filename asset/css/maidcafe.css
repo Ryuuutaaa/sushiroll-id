@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
 }
 
 .container-header {
@@ -11,7 +10,7 @@
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/ntr/bg1.jpg");
+  background-image: url("../img/maidcafe/bg-2.jpg");
   background-attachment: fixed;
   display: flex;
   align-items: center;
@@ -23,33 +22,14 @@
 }
 
 .container-header h1 {
-  color: white;
   padding-left: 20px;
   font-weight: bold;
+  color: #ef5e8d;
 }
-
-/* .container-header .navbar {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 20px 8%;
-  display: flex;
-  align-items: center;
-}
-
-.container-header .navbar h1 {
-  padding-left: 20px;
-  font-weight: bold;
-}
-
-.container-header .navbar img {
-  width: 100px;
-} */
 
 .members {
   width: 100%;
-  height: 200vh;
+  height: 100vh;
 }
 
 .members .container {
@@ -81,6 +61,10 @@
   transition: all 0.3s ease;
 }
 
+.container .member .profile .imgwrap img {
+  width: 100%;
+}
+
 .container .member .profile .card {
   list-style: none;
   text-decoration: none;
@@ -89,39 +73,11 @@
 
 .container .member .profile .card h3 {
   font-weight: bold;
-  font-size: 30px;
-}
-
-.container .member .profile .card .social {
-  font-size: 30px;
-  /* color: black; */
-}
-
-.container .member .profile .card li a i {
-  color: black;
+  font-size: 20px;
 }
 
 .container .member .profile:hover {
   transform: scale(1.2);
-  cursor: pointer;
-  background-color: #77216a;
+  background-color: #ef5e8d;
   color: white;
-}
-
-.container .member .profile .card li a i:hover {
-  color: white;
-}
-
-/* .album {
-  width: 100%;
-  height: 100vh;
-} */
-
-.album .container-img {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.album .container-img img {
-  width: 33.3%;
 }
