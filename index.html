@@ -19,7 +19,10 @@
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
     <link rel="stylesheet" href="asset/css/login.css" />
@@ -27,13 +30,23 @@
     <title>Sushi Roll Bali Entertainment</title>
   </head>
   <body>
-    <form name="login" id="form">
-      <p>Sushiroll Bali</pclass=>
-      <p>Login to allows you to manage project and files</p>
-      <input type="text" name="userid" placeholder="Username" autocomplete="off"/>
-      <input type="password" name="pswrd" placeholder="Password" />
-      <input type="submit" onclick="check(this.form)" value="Login" />
-    </form>
+    <div class="img">
+      <img src="asset/img/sushiroll/sushi-roll.jpg" alt="" />
+    </div>
+    <div class="container">
+      <h1>Login</h1>
+      <form name="login" id="form">
+        <input
+          type="text"
+          name="userid"
+          placeholder="Username"
+          autocomplete="off"
+        /><br />
+        <input type="password" name="pswrd" placeholder="Password" /><br />
+        <!-- <input type="submit" onclick="check(this.form)" value="Login" /> -->
+        <button type="submit" onclick="check(this.form)">login</button>
+      </form>
+    </div>
 
     <script src="asset/js/index.js"></script>
   </body>

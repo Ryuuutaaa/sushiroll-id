@@ -266,3 +266,17 @@ video {
 .container .incontainer .social ul li:hover {
   color: #fe6100;
 }
+
+.btn-logout {
+  padding: 10px;
+  border-radius: 20px;
+  width: 90px;
+  border: none;
+  background-color: #fe6100;
+  color: white;
+}
+
+.btn-logout:hover {
+  background-color: aqua;
+  cursor: pointer;
+}
