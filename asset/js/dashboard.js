@@ -10,6 +10,6 @@ logoutButton.addEventListener("click", function () {
   var confirmLogout = confirm("Apakah Anda yakin ingin logout?");
 
   if (confirmLogout) {
-    window.location.replace("index.html");
+    window.location.replace("../index.html");
   }
 });

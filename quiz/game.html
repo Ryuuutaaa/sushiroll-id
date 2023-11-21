@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/css/games.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link rel="icon" href="asset/img/logo.png" />
+    <title>Game Page</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section class="navbar" id="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="asset/img/logo1.png" alt="" />
+        </div>
+        <ul>
+          <li>
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-users"></i>Member</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-gamepad"></i>Games</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-phone"></i>Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="btn-main">
+        <div class="btn-gambar">
+          <a href="#gambar">
+            <button class="btn">
+              🎮 Tebak Gambar
+              <i class="fa-solid fa-arrow-right arrow"></i>
+            </button>
+          </a>
+        </div>
+        <div class="btn-suit">
+          <a href="">
+            <button class="btn">
+              🎮 suit <i class="fa-solid fa-arrow-right arrow"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- navbar end  -->
+
+    <!-- main games -->
+    <section class="main" id="gambar">
+      <div class="container">
+        <div class="img">
+          <img id="gambarTebak" src="asset/img/" alt="Tebak Gambar" />
+        </div>
+        <div class="jawaban">
+          <input type="text" id="tebakan" placeholder="Kakak siapa niii???" />
+          <button onclick="cekTebakan()">Jawaban</button>
+          <p id="kesempatan">Kesempatan: 5</p>
+          <p id="hasil"></p>
+        </div>
+      </div>
+    </section>
+    <!-- end main games -->
+
+    <!-- script -->
+    <script src="asset/js/pageGame.js"></script>
+    <!-- end script -->
+  </body>
+</html>
