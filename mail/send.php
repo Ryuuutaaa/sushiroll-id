@@ -46,7 +46,7 @@ if(isset($_POST["send"])){
     echo 
     "<script>
     alert('email terkirim');
-    document.location.href = 'index.php';
+    document.location.href = '../quiz/index.html';
   </script>";
 }
 
