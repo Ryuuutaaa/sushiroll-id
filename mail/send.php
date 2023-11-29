@@ -7,6 +7,12 @@ require 'phpmailer/src/PHPMailer.php';
 require 'phpmailer/src/SMTP.php';
 
 if(isset($_POST["send"])){
+  $email = $_POST["email"];
+  if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      echo "<script>alert('Error: Masukkan alamat email yang valid.'); window.location.href = 'index.php';</script>";
+      exit(); // Hentikan eksekusi jika email tidak valid
+  }
+
     $mail = new PHPMailer(true);
 
     $mail->isSMTP();
@@ -26,7 +32,7 @@ if(isset($_POST["send"])){
     $mail->Subject = "Voucher Diskon Belanja untuk Maid Caffe Bali!";
 
     $emailContent = <<<EOT
-    Halo,
+    Halo, {$_POST["nama"]}
 
     Kabar baik! Kamu memiliki kesempatan untuk mendapatkan voucher diskon spesial untuk belanja di Maid Caffe Bali!
 
@@ -49,5 +55,4 @@ if(isset($_POST["send"])){
     document.location.href = '../quiz/index.html';
   </script>";
 }
-
 
